@@ -1,8 +1,17 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <img className="dark:invert" src="/next.svg" alt="Next.js logo" />
+        <Image
+          className="dark:invert"
+          src="/next.svg"
+          alt="Next.js logo"
+          width={180}
+          height={37}
+          priority
+        />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
@@ -32,10 +41,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               className="dark:invert"
               src="/vercel.svg"
               alt="Vercel logomark"
+              width={18}
+              height={18}
             />
             Deploy Now
           </a>
