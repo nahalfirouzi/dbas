@@ -1,0 +1,147 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
+.about {
+  background: linear-gradient(135deg, #f3efe9 0%, #e9e2d6 100%);
+  padding: 90px 0; /* vertical only — MaxWidth handles horizontal */
+  }
+  
+.about_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+  
+.about_left {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+}
+
+.about_left h1{
+  display: inline-block;
+  width: fit-content;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+.about_left p{
+  width: fit-content;
+}
+.about_left .nav_button{
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.about_right{
+  position: relative;
+}
+
+.about_img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .about {
+    padding: 60px 0;
+  }
+  .about_grid {
+    grid-template-columns: 1fr;
+  }
+  .about_img { height: 320px; }
+  .about_left h2 { font-size: 32px; }
+}
+
+/* What we do */
+
+.activities {
+  background: #110d0a;
+  padding: 64px 32px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* Ending: Join us now */
+.ending_join {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ending_join_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 6, 3, 0.75) 0%,
+    rgba(10, 6, 3, 0.55) 50%,
+    rgba(10, 6, 3, 0.8) 100%
+  );
+}
+
+.ending_join_content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  gap: 32px;
+}
+
+.ending_join_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ending_logo {
+  width: 50px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+
+.ending_join_text p {
+  color: #d9d0c6;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ending_join_buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .ending_heading {
+    font-size: 36px;
+  }
+  .ending_join_buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}

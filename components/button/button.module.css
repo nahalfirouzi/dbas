@@ -1,0 +1,23 @@
+.button {
+  background-image: linear-gradient(to right, #e7c84c);
+  border: none ;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e7c84c;
+  color:#131e25;
+  font-size: 14px;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  background-color: #bf8b48;
+  color: #111111;
+  box-shadow: 0 0 5px #bf8b48, 
+              0 0 20px #bf8b48, 
+              0 0 40px #bf8b48;      
+  transform: scale(1.05);
+
+
+}
